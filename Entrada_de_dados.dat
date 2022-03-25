@@ -1,0 +1,37 @@
+|=============================================================================================|
+|				Entrada de dados para a Transformação de Fase                                 |
+|=============================================================================================|
+   nx			ny			nz			|                                                     |
+   320			320			320		    |Numero de malha nas direcoes x, y e z	              |
+   Malha_Quadrangular					|Malha                                                |	
+   Uniforme							    |Tipo de Nucleação						              |
+   Nenhuma								|Nucleação durante o crescimento					  |
+   Seed.vtk								|Nome do Arquivo de Entrada							  |
+   Automato								|Método de Crescimento								  |			
+   Von_Neumman							|Tipo de Vizinhanca					                  |
+   64	   	       	    		        |Número de núcleos iniciais                           |
+   0									|Tipo de crescimento do cone causal					  |
+   1									|Critério de parada									  |
+   100									|Parâmetro de parada								  |
+   VTK									|Tipo de arquivo de saída							  |
+   Saida								|Nome do arquivo de saída                             |
+   100									|Porcentagem inicial para geração de arquivos de saída|
+   40									|Intervalo percentual de geração de arquivos de saída |
+   0									|Escreve saída de dados pós-Nucleação				  |
+   1									|Realiza Crescimento								  |
+   0									|Escreve saída de dados final						  |
+   0									|Realiza os cálculos de posição dos vértices		  |
+|=============================================================================================|
+|     Fim de entrada de dados                                                                 |
+|=============================================================================================|
+
+
+!OBS.:
+!Tipo de Nucleação: Uniforme; Importar; Periodica
+!Nucleação durante o crescimento: Nenhuma; Uniforme; Importar; Periodica
+!Método de Crescimento: Automato; Cone 
+!Tipo de crescimento do cone causal: 0: Constante;
+!Critério de parada: 1: Fração transformada;	2:Número de passos
+!Parâmetro de parada:	0-100 se Critério de parada = 1 (Porcentagem concluída),
+!						Inteiro qualquer se Critério de parada = 2 (Número de passos)
+!Tipo de arquivo de saída: Paraview = VTK | Tecplot = DAT   
